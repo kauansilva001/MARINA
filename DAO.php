@@ -6,13 +6,13 @@ include "conection.php";
 class DAO {
 
     function cadastrar(entity $e){
-        $sql = ('insert into Ouvinte (user_name, email) values(?,?)');
+        $sql = ('insert into Ouvinte (email, senha) values(?,?)');
         $bd = new Conection();
         $e = $bd->getConnection();
 
         $v = $e->prepare($sql);
         $v->bindValue(1, $e->getEmail());
-        $v->bindValue(2, $e->getUserName());
+        $v->bindValue(2, $e->getSenha());
 
         $result = $v->execute();
 

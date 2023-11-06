@@ -2,7 +2,7 @@
 
 class entity{
 
-    private $email, $userName;
+    private $email, $senha;
 
 
     public function getEmail(){
@@ -13,11 +13,11 @@ class entity{
         $this->email = $email;
     }
 
-    public function getUserName(){
-        return $this->userName;
+    public function getSenha(){
+        return $this->senha;
     }
 
-    public function setUserName($userName){
-        return $this->userName = $userName;
+    public function setSenha($senha){
+        return $this->senha = $senha;
     }
 }
