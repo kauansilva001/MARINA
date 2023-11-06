@@ -2,21 +2,24 @@
 
 include "entity.php";
 include "conection.php";
-class  DAO{
-    
-    function cadastrar(Conection $conection){
-        $sql = ('insert into  (email, user) values(?,?)');
+
+class DAO {
+
+    function cadastrar(entity $e){
+        $sql = ('insert into Ouvinte (user_name, email) values(?,?)');
         $bd = new Conection();
-        $conection->getConection();
-    
-        $v = $conection->prepare($sql);
-        $v->bindValue(1, $conection->getEmail());
-        $v->bindValue(2, $conection->getUserName());
-    
+        $e = $bd->getConnection();
+
+        $v = $e->prepare($sql);
+        $v->bindValue(1, $e->getEmail());
+        $v->bindValue(2, $e->getUserName());
+
         $result = $v->execute();
-    
-        if($result){
-        
+
+        if ($result) {
+            echo 'Cadastro realizado <b>com sucesso</b> :)';
+        } else {
+            echo 'Cadastro <b>não realizado</b> :(';
+        }
     }
-}
 }

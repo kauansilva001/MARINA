@@ -1,7 +1,6 @@
 <?php
 
-class entity
-{
+class entity{
 
     private $email, $userName;
 
