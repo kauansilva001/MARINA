@@ -1,9 +1,13 @@
 <?php
 
-$var = FILTER_INPUT(INPUT_POST, '');
-$var = FILTER_INPUT(INPUT_POST, '');
+$email = FILTER_INPUT(INPUT_POST, 'email');
+$senha = FILTER_INPUT(INPUT_POST, 'senha');
 $button = FILTER_INPUT(INPUT_POST, 'button');
 
+
+var_dump($email);
+var_dump($senha);
+var_dump($button);
 
 include('entity.php');
 include('DAO.php');
@@ -14,7 +18,7 @@ $entity->setSenha($senha);
 
 $crud = new DAO();
 
-if ($button == '') {
+if ($button == 'ENVIAR') {
     $crud->cadastrar($e);
 } else {
     echo 'Método não realizado :(';

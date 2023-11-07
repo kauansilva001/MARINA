@@ -17,8 +17,8 @@
         <h1 class="h1-index">MARINA DIAMANDIS</h1>
         <nav>
             <a class="text-decoration-none active" href="#">HOME</a>
-            <a class="text-decoration-none" href="">CARREIRA</a>
-            <a class="text-decoration-none" href="">CONTATOS</a>
+            <a class="text-decoration-none" href="carreira.php">CARREIRA</a>
+            <a class="text-decoration-none" href="contatos.php">CONTATOS</a>
         </nav>
     </header>
 
@@ -62,13 +62,6 @@
                 allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
                 loading="lazy">
             </iframe>
-
-            <div class="block">
-                <div class="blocks"></div>
-                <div class="blocks"></div>
-                <div class="blocks"></div>
-                <div class="blocks"></div>
-            </div>
         </section>
     </main>
 
