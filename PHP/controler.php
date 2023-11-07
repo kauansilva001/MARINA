@@ -4,8 +4,6 @@ $email = FILTER_INPUT(INPUT_POST, 'email');
 $senha = FILTER_INPUT(INPUT_POST, 'senha');
 $button =FILTER_INPUT(INPUT_POST, 'button');
 
-var_dump($email);
-
 
 include('DAO.php');
 
@@ -15,7 +13,7 @@ $varset->setSenha($senha);
 
 $crud = new DAO();
 
-$crud->cadastrar($e);
+$crud->cadastrar($varset);
 
 
 /* OS COMMITS FEITOS PELA 'SABRINAOLIVEI' FORAM UM ERRO, O COMMIT FOI FEITO POR 'KAUANSIULVA001'*/
