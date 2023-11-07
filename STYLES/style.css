@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.cabeçalho-index {
+    width: 90%;
+    height: 60px;
+    margin: auto;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-end;
+    justify-content: space-between;
+    border-bottom: 1px #E6E6E6 solid;
+}
+
+.h1-index {
+    font-size: 28px;
+    font-family: 'Cardo', serif;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+a {
+    color: #000;
+    cursor: pointer;
+    font-family: 'Cardo', serif;
+    margin-left: 26px;
+    font-size: 22px;
+}
+
+.principal-index {
+    margin-top: 30px;
+}
+
+.segunda-sessao {
+    margin-top: 35px;
+    padding: 0 20px;
+}
+
+
+.subtitulo-index {
+    font-family: 'Cardo', serif;
+    color: #000;
+}
+
+.block {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+.blocks {
+    width: 320px;
+    height:220px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 1px 1px 1px 1px rgba (rgb(0, 0, 0), green, blue, alpha);
+}
+
