@@ -11,9 +11,9 @@ class DAO {
     function cadastrar(Entity $e){
         $sql = ('insert into Ouvinte (email, senha) values(?,?)');
         $bd = new Conection();
-        $con = $bd->getConnection();
+        $conn = $bd->getConnection();
 
-        $v = $con->prepare($sql);
+        $v = $conn->prepare($sql);
         $v->bindValue(1, $e->getEmail());
         $v->bindValue(2, $e->getSenha());
 
