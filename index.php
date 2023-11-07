@@ -55,7 +55,7 @@
         </section>
 
         <section class="segunda-sessao">
-            <h2 class="subtitulo-index">PLATAFORMAS DE STREAMING</h2>
+            <h2 class="subtitulo-index">PLATAFORMA DE STREAMING</h2>
             <iframe style="border-radius:12px" class="mb-3"
                 src="https://open.spotify.com/embed/artist/6CwfuxIqcltXDGjfZsMd9A?utm_source=generator&theme=0"
                 width="100%" height="152" frameBorder="0" allowfullscreen=""
@@ -65,8 +65,8 @@
         </section>
     </main>
 
-    <footer>
-        <p>&copy; ETEC JUSCELINO KUBITSCHEK DE OLIVEIRA</p>
+    <footer class="mt-5 mb-15 border-top d-flex justify-content-center">
+        <p class="mt-3">&copy; ETEC JUSCELINO KUBITSCHEK DE OLIVEIRA</p>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"

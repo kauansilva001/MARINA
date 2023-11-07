@@ -3,14 +3,17 @@
 include "entity.php";
 include "conection.php";
 
+$e = new Entity;
+
+
 class DAO {
 
-    function cadastrar(entity $e){
+    function cadastrar(Entity $e){
         $sql = ('insert into Ouvinte (email, senha) values(?,?)');
         $bd = new Conection();
-        $e = $bd->getConnection();
+        $con = $bd->getConnection();
 
-        $v = $e->prepare($sql);
+        $v = $con->prepare($sql);
         $v->bindValue(1, $e->getEmail());
         $v->bindValue(2, $e->getSenha());
 

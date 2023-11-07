@@ -33,5 +33,5 @@
         </div>
 
 
-        <input type="submit" value="ENVIAR" id="button">
+        <input type="submit" value="ENVIAR" id="button" name="button">
     </form>
