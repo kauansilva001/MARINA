@@ -10,7 +10,7 @@
 
 <body>
 
-    <form action="controler.php" method="POST" class="form_main">
+    <form action="PHP/controler.php" method="POST" class="form_main">
         <p class="heading">Login</p>
         <div class="inputContainer">
             <svg class="inputIcon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#2e2e2e"

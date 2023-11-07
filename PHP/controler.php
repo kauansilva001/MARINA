@@ -2,19 +2,16 @@
 
 $email = FILTER_INPUT(INPUT_POST, 'email');
 $senha = FILTER_INPUT(INPUT_POST, 'senha');
-$button = FILTER_INPUT(INPUT_POST, 'button');
+$button =FILTER_INPUT(INPUT_POST, 'button');
 
 
-var_dump($email);
-var_dump($senha);
-var_dump($button);
 
-include('entity.php');
+
 include('DAO.php');
 
-$entity = new Entity();
-$entity->setEmail($email);
-$entity->setSenha($senha);
+$varset = new Entity();
+$varset->setEmail($email);
+$varset->setSenha($senha);
 
 $crud = new DAO();
 
