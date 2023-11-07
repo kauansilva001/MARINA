@@ -33,8 +33,12 @@ a {
     font-size: 22px;
 }
 
+a:hover {
+    color: rebeccapurple;
+}
+
 .principal-index {
-    margin-top: 30px;
+    margin-top: 65px;
 }
 
 .segunda-sessao {
@@ -46,18 +50,6 @@ a {
 .subtitulo-index {
     font-family: 'Cardo', serif;
     color: #000;
-}
-
-.block {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-}
-
-.blocks {
-    width: 320px;
-    height:220px;
-    background-color: rgb(255, 255, 255);
-    box-shadow: 1px 1px 1px 1px rgba (rgb(0, 0, 0), green, blue, alpha);
+    margin-top: 80px;
 }
 
